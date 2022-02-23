@@ -27,6 +27,8 @@ namespace PriceCoinsTopTens
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
             app.UseStatusCodePages();
             app.UseRouting();
 

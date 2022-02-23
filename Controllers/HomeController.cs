@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PriceCoinsTopTens.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace PriceCoinsTopTens.Controllers
     {
         [HttpGet]
         public IActionResult Index()
-        {
+        {          
+
             return View();
         }
     }
