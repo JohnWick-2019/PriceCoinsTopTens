@@ -6,7 +6,7 @@ namespace PriceCoinsTopTens.WorkClasses
     public class GetListCriptocurrenciName
     {
         private IConfiguration config = Configuration.Default.WithDefaultLoader();
-        private static string address = "https://coinmarketcap.com/";
+        private string address = "https://coinmarketcap.com/";
 
         /// <summary>
         /// The method receives a list of the first ten cryptocurrencies from the site.

@@ -1,9 +1,38 @@
-﻿
+﻿@using PriceCoinsTopTens.Models;
+
 @{
     ViewData["Title"] = "Main Page";
 }
 
-<h1>Index</h1>
+@model DataNameAndPriceCripto
+
+
+<div>
+    <table>
+        <tr>
+            <th>№</th>
+            <th>Дата</th>
+            <th>Криптовалюта</th>
+            <th>Цена</th>
+        </tr>
+
+        @{
+            for (int i = 0; i < 10; i++)
+            {
+                <tr>
+                    <td>@(i+1)</td>
+                    <td>@DateTime.Now.ToShortDateString()</td>
+                    <td>@Model.NameCripto[i]</td>
+                    <td>@Model.PriceCripto[i]</td>
+                </tr>
+
+            }
+        }
+
+
+
+    </table>
+</div>
 
 
 

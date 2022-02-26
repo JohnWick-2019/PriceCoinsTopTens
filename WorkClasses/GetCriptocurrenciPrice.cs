@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PriceCoinsTopTens.WorkClasses
 {
@@ -10,7 +7,7 @@ namespace PriceCoinsTopTens.WorkClasses
     /// </summary>
     public class GetCriptocurrenciPrice
     {
-        public void Show()
+        public List<string> GetPrice()
         {
             var сriptocurrenciName = new List<string>();
             var сriptocurrenciPrice = new List<string>();
@@ -24,10 +21,7 @@ namespace PriceCoinsTopTens.WorkClasses
                     сriptocurrenciPrice = parser.Parse(сriptocurrenciName);
                 }
 
-                foreach (var item in сriptocurrenciPrice)
-                {
-                    Console.WriteLine(item);
-                }
+                return сriptocurrenciPrice;
             }
 
         }
